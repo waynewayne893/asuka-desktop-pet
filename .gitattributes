@@ -1,0 +1,9 @@
+# 本项目以二进制素材为主：禁止任何换行符/编码转换，
+# 保证 Git blob 与磁盘字节逐字节一致（便于用 SHA-256 复核交付物）。
+* -text
+
+*.webp binary
+*.png  binary
+*.gif  binary
+*.jpg  binary
+*.mp4  binary

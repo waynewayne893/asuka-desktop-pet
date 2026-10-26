@@ -1,0 +1,25 @@
+# 明日香桌宠：Git 归档忽略规则
+# 原则：仓库只保存「已验收交付物 + 美术母版 + 文档 + 交接记录」，
+# 过程素材、失败候选、原始参考图与用户私有数据一律留在本地，不删除。
+
+# 1) 制作现场：过程图、逐帧拆解、候选与失败版本、QA 报告、制作脚本
+/work/
+
+# 2) 未经核实再分发权利的原始参考图（本地保留）
+/references/source_refs/
+
+# 3) Codex 用户私有数据（正常不在本目录；防止误入库）
+/.codex/
+/auth.json
+/installation_id
+
+# 4) 系统与编辑器临时文件
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+*.bak
+*~
+__pycache__/
+.venv/
+node_modules/
