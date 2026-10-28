@@ -32,7 +32,7 @@
 
 | 项 | 实测 |
 |---|---|
-| 当前目录 / `git rev-parse --show-toplevel` | `D:/HuaweiMoveData/Users/86191/Desktop/Codex_Asuka_交付包_v2`（两者一致） |
+| 当前目录 / `git rev-parse --show-toplevel` | `<LOCAL_WORKTREE>`（两者一致） |
 | 初始化前快照（14:35:16） | 1,130 文件 / 251,197,740 字节 / 239.56 MB |
 | 初始化前 `.git` | **不存在**；祖先目录亦无 `.git` |
 | 完成后（含 `.git` 与本交接文档） | **1,188 文件 / 259,514,850 字节**（其中 `.git` 55 文件 / 8,295,525 字节） |

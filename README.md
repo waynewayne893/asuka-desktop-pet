@@ -30,6 +30,9 @@
 - `docs/04-交给Codex的首轮提示词.txt`：建议直接投喂 Codex 的第一轮提示
 - `references/approved_baselines/`：已确认通过的两张基准形象图
 - `references/source_refs/`：用户提供的历史参考图与早期参考资料
+- `LICENSE`：All Rights Reserved 声明（不覆盖第三方素材）
+- `ASSET_RIGHTS.md`：第三方素材权属与再分发限制
+- `PUBLIC_RELEASE_CHECKLIST.md`：公开发布前必须完成的检查清单
 
 ## 交付重点
 最重要的是：
@@ -48,8 +51,9 @@
 - 仓库保存：两套已验收的官方本地宠物包（校服 / 《终》白色战斗服）、两张已批准美术母版、实施与验收文档、Git 迁移交接记录。
 - 仓库**不保存**：`work/` 制作现场（过程图、失败候选、QA 报告、制作脚本）、`references/source_refs/` 原始参考图、Codex 用户私有数据。这些仅保留在本地，可用本文件末尾的说明定位。
 - 角色形象为第三方作品（EVA 系列）的同人衍生。**Private 不等于取得授权**：未获得权利人再分发许可，不得改为 Public，也不得对外分发素材。
-- 本仓库**不提供开源许可证**，不声称素材版权归本仓库所有者。
-- 文档中保留了制作时的本机绝对路径（形如 `C:\Users\<用户名>\...`），用于本机复现说明，不构成可移植配置。
+- 本仓库为私有归档；根目录 `LICENSE` 是 **All Rights Reserved** 声明，不授予再分发或商用许可，并明确排除第三方角色素材。第三方素材的权属与限制见 `ASSET_RIGHTS.md`。
+- 任何公开发布必须先通过 `PUBLIC_RELEASE_CHECKLIST.md`；该清单当前不满足，因此不得公开。
+- 文档中的本机绝对路径已脱敏为 `<LOCAL_WORKTREE>` / `<LOCAL_USER_CACHE>` / `<LOCAL_USER_PATH>` 等占位符，仅用于本机复现说明，不构成可移植配置。
 - 本机安装位置：`%USERPROFILE%\.codex\pets\asuka-school\`、`%USERPROFILE%\.codex\pets\asuka-work\`、`%USERPROFILE%\.codex\pets\asuka-mixed-test\`。验收状态见 `docs/07-最终接入与验收报告_工作稿.md` 与 `docs/08-混合双形态最小测试_工作稿.md`。
 - 第三只混合测试（`asuka-mixed-test`）的图集位于本地 `work/phase3_20261025/mixed-test/`，**按当前范围未纳入仓库**；如需归档，须另行确认。
 

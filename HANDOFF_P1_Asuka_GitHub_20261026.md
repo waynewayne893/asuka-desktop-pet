@@ -248,7 +248,7 @@ work/phase3_20261025/work/qa/register-cardinals-recovered-v2.py (1)
 | LICENSE / NOTICE | **完全没有**（全量扫描 0 命中） |
 | 依赖锁文件 | **没有**（无 `requirements.txt`、`package-lock.json`、`pnpm-lock.yaml`） |
 | 构建说明 | 无构建；`work/*/README_工作稿.md` 提供产物说明 |
-| 依赖 | Python + Pillow（运行时可见 12.3.0）；`render_mp4.cjs` 依赖 `C:/Users/86191/.cache/codex-runtimes/.../playwright`；脚本依赖官方 `create-pet/scripts/*.py`（绝对路径） |
+| 依赖 | Python + Pillow（运行时可见 12.3.0）；`render_mp4.cjs` 依赖 `<LOCAL_USER_CACHE>/codex-runtimes/.../playwright`；脚本依赖官方 `create-pet/scripts/*.py`（绝对路径） |
 | 私有仓库能否独立构建 | **不能**。缺少官方 skill 脚本，且脚本路径写死本机；只能"读得懂、可追溯"，无法"clone 即重制" |
 
 结论：仓库适合作为**档案与决策记录**，不宜宣称"可复现构建"。若用户期望"换一台机器能重做图集"，需要在 P2 之后单列一个"环境与复现说明"任务（超出 P1 范围）。
@@ -444,7 +444,7 @@ Get-FileHash -Algorithm SHA256 <delivery files>                 # 5/5 通过
 Get-FileHash -Algorithm SHA256 <installed files>                # 与交付一致
 python -c "PIL.Image.open(...).info"                            # 图像元数据
 Select-String -Pattern 'api[_-]?key|secret|passw|bearer|sk-|ghp_|BEGIN .*PRIVATE KEY|token[:=]'
-Select-String -Pattern 'C:\\Users\\86191'                       # 11 文件
+Select-String -Pattern 'C:\\Users\\<username>'                 # 历史扫描（路径已脱敏）
 Get-ChildItem -Recurse -File | Get-FileHash | Group-Object      # 192 重复组
 ```
 
